@@ -7,6 +7,18 @@ return {
 		"MunifTanjim/nui.nvim",
         "3rd/image.nvim",
 	},
+    opts = {
+      filesystem = {
+        filtered_items = {
+          hide_dotfiles = false,
+       },
+        follow_current_file = true,
+      },
+      window = {
+        position = "right",
+        width = 33,
+      },
+    },
 	config = function()
 		vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal left<CR>", {})
 		vim.keymap.set("n", "<leader>bf", ":Neotree buffers reveal float<CR>", {})
@@ -20,6 +32,5 @@ return {
   				}
 			})
 
-		
 	end,
 }
