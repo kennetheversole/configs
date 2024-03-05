@@ -20,10 +20,6 @@ return {
                     "marksman",
                     "typos_lsp",
                     "bashls",
-                    "yamlls",
-                    "actionlint",
-                    "black",
-                    "commitlint",
                     "pyright"
                 },
         }
