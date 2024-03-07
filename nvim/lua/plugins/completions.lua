@@ -11,6 +11,15 @@ return {
   },
   {
     "hrsh7th/nvim-cmp",
+    dependencies = {
+      "Saecki/crates.nvim",
+      event = { "BufRead Cargo.toml" },
+      opts = {
+        src = {
+          cmp = { enabled = true },
+        },
+      },
+    },
     config = function()
       local cmp = require("cmp")
       require("luasnip.loaders.from_vscode").lazy_load()

@@ -10,13 +10,24 @@ return {
     opts = {
       filesystem = {
         filtered_items = {
-          hide_dotfiles = false,
+            visible = true,
+            show_hidden_count = true,
+            hide_dotfiles = false,
+            hide_gitignored = false,
+
+            hide_by_name = {
+	        -- '.git',
+	        -- '.DS_Store',
+	        -- 'thumbs.db',
+	        },
+	        never_show = {},
+
        },
         follow_current_file = true,
       },
       window = {
         position = "right",
-        width = 33,
+        width = 25,
       },
     },
 	config = function()
