@@ -6,9 +6,9 @@ vim.cmd("set shiftwidth=4")
 vim.cmd("setlocal spell spelllang=en_us")
 vim.g.mapleader = " "
 vim.cmd("set number")
-
+vim.cmd("set clipboard=unnamedplus")
 vim.g.mapleader = " "
-
+vim.cmd("set list listchars=nbsp:␣,trail:•,extends:⟩,precedes:⟨")
 -- Navigate vim panes better
 vim.keymap.set('n', '<c-k>', ':wincmd k<CR>')
 vim.keymap.set('n', '<c-j>', ':wincmd j<CR>')
