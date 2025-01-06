@@ -18,7 +18,18 @@ return {
                     "marksman",
                     "typos_lsp",
                     "bashls",
-                    "pyright"
+                    "ansiblels",
+                    "bashls",
+                    "harper_ls",
+                    "dockerls",
+                    "docker_compose_language_service",
+                    "ast_grep",
+                    "html",
+                    "jinja_lsp",
+                    "ltex",
+                    "grammerly",
+                    "pylsp",
+                    "salt_ls"
                 },
         }
     end
