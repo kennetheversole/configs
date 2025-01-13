@@ -12,7 +12,6 @@ return {
             ensure_installed = {
                     "lua_ls",
                     "rust_analyzer",
-                    "dockerls",
                     "jsonls",
                     "jqls",
                     "marksman",
@@ -27,9 +26,8 @@ return {
                     "html",
                     "jinja_lsp",
                     "ltex",
-                    "grammerly",
                     "pylsp",
-                    "salt_ls"
+                    "yamlls"
                 },
         }
     end
@@ -61,6 +59,38 @@ return {
       lspconfig.lua_ls.setup({
         capabilities = capabilities
       })
+      lspconfig.rust_analyzer.setup({
+        capabilities = capabilities
+      })
+      lspconfig.rust_analyzer.setup({
+        capabilities = capabilities
+      })
+      lspconfig.bashls.setup({
+        capabilities = capabilities
+      })
+      lspconfig.harper_ls.setup({
+        capabilities = capabilities
+      })
+      lspconfig.dockerls.setup({
+        capabilities = capabilities
+      })
+      lspconfig.docker_compose_language_service.setup({
+        capabilities = capabilities
+      })
+
+      lspconfig.jqls.setup({
+        capabilities = capabilities
+      })
+      lspconfig.yamlls.setup({
+        capabilities = capabilities
+      })
+      lspconfig.typos_lsp.setup({
+        capabilities = capabilities
+      })
+      lspconfig.ansiblels.setup({
+        capabilities = capabilities
+      })
+
 
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
